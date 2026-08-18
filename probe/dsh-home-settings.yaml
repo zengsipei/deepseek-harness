@@ -1,0 +1,11 @@
+llm-pi-ai:
+  providers:
+    mock:
+      apiKeyEnv: PROBE_LLM_KEY
+      api: openai-completions
+      baseURL: http://127.0.0.1:9410/v1
+      models:
+        - id: probe-model
+agent-default-model:
+  provider: mock
+  model: probe-model
